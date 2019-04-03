@@ -34,7 +34,7 @@ export class MapComponent implements OnInit {
     this.activityDistance = this.activity.distance;
     this.activityDate = this.activity.date;
     this.activityRating = this.activity.rating;
-    this.activitySafetyRating = this.activity.safetyRating;
+    this.activitySafetyRating = this.activity.safetyRating; 
     this.gpx = this.activity.gpxData;
   }
 
