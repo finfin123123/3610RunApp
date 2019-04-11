@@ -11,12 +11,14 @@ import { MapComponent } from './map/map.component';
 import { ActivityService } from './services/activity.service';
 import { MapService } from './services/map.service';
 import { appRoutes } from '../routes';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActivityListComponent,
-    MapComponent
+    MapComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
