@@ -8,7 +8,7 @@ namespace Strides.Models
     {
         public int Id { get; set; }
 
-        public DateTimeOffset Date { get; set; }
+        public string Date { get; set; }
 
         public int DistanceInMeters { get; set; }
 

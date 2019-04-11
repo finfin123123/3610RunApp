@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Strides.Models;
+using Strides.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Strides.Api
@@ -27,7 +28,7 @@ namespace Strides.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WorkoutContext>(options => options.UseInMemoryDatabase("Workouts"));
+            services.AddDbContext<WorkoutContext>(options => options.UseNpgsql(Configuration.GetConnectionString("WorkoutContext")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
