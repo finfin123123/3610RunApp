@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Strides.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Strides.Data
 {
-    public class WorkoutContext : DbContext
+    public class WorkoutContext : IdentityDbContext<ApplicationUser>
     {
         public WorkoutContext(DbContextOptions<WorkoutContext> options)
             : base(options)

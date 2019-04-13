@@ -16,8 +16,8 @@ namespace Strides.Api.Controllers
         public WorkoutsController(WorkoutContext db) => this.db = db;
      
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet()]
+        public IActionResult GetWorkouts()
         {
             return Ok(db.Workouts);
         }
