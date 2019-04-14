@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WorkoutsComponent } from './workouts/workouts/workouts.component';
-import { WorkoutRowComponent } from './workouts/workout-row/workout-row.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     HomeComponent,
     WorkoutsComponent,
-    WorkoutRowComponent,
     NavbarComponent
   ],
   imports: [
