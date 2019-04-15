@@ -31,11 +31,11 @@ export class WorkoutsService {
   //   );
   // }
 
-  addWorkouts(newWorkouts: Workout[]): Observable<Workout> {
-    return this.http.post<Workout>(this.workoutsUri, newWorkout, {
-        headers: new HttpHeaders({
-            'Content-Type' : 'application/json'
-        })
-    });
-  }
+  // addWorkouts(newWorkouts: Workout[]): Observable<Workout> {
+  //   return this.http.post<Workout>(this.workoutsUri, newWorkout, {
+  //       headers: new HttpHeaders({
+  //           'Content-Type' : 'application/json'
+  //       })
+  //   });
+  // }
 }
