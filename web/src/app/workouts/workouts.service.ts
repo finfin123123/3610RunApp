@@ -8,7 +8,7 @@ import { Workout } from './workout';
   providedIn: 'root'
 })
 export class WorkoutsService {
-  private workoutsUri = 'https://localhost:5001/api/workouts';
+  private workoutsUri = 'http://strides-api-nicchzx.azurewebsites.net/api/workouts';
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(`${operation} failed: ${error.message}`);
