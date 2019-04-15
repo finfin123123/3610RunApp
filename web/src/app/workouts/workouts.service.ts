@@ -23,4 +23,19 @@ export class WorkoutsService {
       catchError(this.handleError<Workout[]>('getWorkouts', []))
     );
   }
+
+  // addWorkouts() {
+  //   return this.http.get<Workout[]>(this.workoutsUri).pipe(
+  //     tap(_ => console.log('fetched workouts')),
+  //     catchError(this.handleError<Workout[]>('addWorkouts', []))
+  //   );
+  // }
+
+  // addWorkouts(newWorkouts: Workout[]): Observable<Workout> {
+  //   return this.http.post<Workout>(this.workoutsUri, newWorkout, {
+  //       headers: new HttpHeaders({
+  //           'Content-Type' : 'application/json'
+  //       })
+  //   });
+  // }
 }
